@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ecomapp">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cntig"
+        android:label="Ecommune"
+        android:roundIcon="@drawable/cntig"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcomApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FacturesImpayer"></activity>
+        <activity android:name=".Factpayer" />
+        <activity android:name=".Impayer" />
+        <activity android:name=".User" />
+        <activity android:name=".facturations" />
+        <activity android:name=".MyCinetPayActivity" />
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_menu" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
